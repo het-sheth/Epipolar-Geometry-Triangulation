@@ -1,0 +1,11 @@
+# MATLAB auto-save files
+*.asv
+
+# MATLAB compiled files
+*.mex*
+
+# MATLAB figure files
+*.fig
+
+# MATLAB crash logs
+matlab_crash_dump.*
