@@ -4,8 +4,8 @@ function F = task3_5(do_visualize)
 if nargin < 1, do_visualize = true; end
 
 % Load camera parameters
-S1 = load('C:\Users\akshi\OneDrive\Desktop\CMPSC 454\Project_2\Project2DataFiles\Parameters_V1_1.mat'); 
-S2 = load('C:\Users\akshi\OneDrive\Desktop\CMPSC 454\Project_2\Project2DataFiles\Parameters_V2_1.mat');
+S1 = load('Parameters_V1_1.mat'); 
+S2 = load('Parameters_V2_1.mat');
 P1 = S1.Parameters;
 P2 = S2.Parameters;
 
@@ -36,7 +36,7 @@ end
 
 % Optional visual sanity check
 if do_visualize
-    M = load('C:\Users\akshi\OneDrive\Desktop\CMPSC 454\Project_2\Project2DataFiles\mocapPoints3D.mat');
+    M = load('mocapPoints3D.mat');
     if isfield(M,'pts3D')
         X = M.pts3D;
     else
